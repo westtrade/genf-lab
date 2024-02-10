@@ -1,0 +1,43 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: "Inter", system-ui, sans-serif;
+	}
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+.title-1 {
+	@apply leading-[67.2px] font-bold text-[56px];
+}
+
+.button {
+	@apply py-3 px-6 font-normal text-base leading-6 inline-flex justify-center min-w-0;
+	@apply flex items-center gap-2;
+}
+
+.button-white {
+	@apply bg-white text-[#000] border border-white;
+}
+
+.button-black {
+	@apply bg-black text-white border border-black;
+}
+
+.button-outline {
+	@apply text-white border border-white;
+}
+
+.button-outline-black {
+	@apply text-black border border-black;
+}
